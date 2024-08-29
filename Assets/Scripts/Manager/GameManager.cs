@@ -11,14 +11,21 @@ public enum GameState
     End
 }
 
+public enum MaterialType
+{
+    Cotton,
+    Leather,
+    Tencel
+}
 public class GameManager : Singleton<GameManager>
 {
     public float gameTime;
+    public MaterialType materialType;
     public Action startAction;
     public Action runningAction;
     public GameState gameState = GameState.Select;
-    private int money = 0;
-    private int envPoint { get; set; }
+    public int money = 0;
+    public int envPoint { get; set; }
 
     new void Awake()
     {

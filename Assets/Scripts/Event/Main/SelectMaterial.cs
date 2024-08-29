@@ -25,6 +25,12 @@ public class SelectMaterial : EventData
 
     }
 
+    public void SetMaterial(int material)
+    {
+        // Set the material
+        GameManager.Instance.materialType = (MaterialType)material;
+    }
+
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
