@@ -150,8 +150,8 @@ Transform:
   m_GameObject: {fileID: 120338836}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26, y: -4.07, z: 0}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 22.22, y: -4.07, z: 0}
+  m_LocalScale: {x: 5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1499538396}
@@ -198,15 +198,15 @@ SpriteRenderer:
   m_SortingLayerID: 773489777
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 71ebafeef3c03457483266a33ab2b270, type: 3}
-  m_Color: {r: 0.43544197, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &120338841
@@ -223,8 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Newspaper
   isInteractable: 1
---- !u!60 &120338842
-PolygonCollider2D:
+--- !u!61 &120338842
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -255,36 +255,19 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.08341539, y: 1.089551}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.984375, y: 0.984375}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.4921875, y: 0.3359375}
-      - {x: 0.48828125, y: 0.3515625}
-      - {x: 0.41796875, y: 0.44921875}
-      - {x: 0.3359375, y: 0.4921875}
-      - {x: -0.3125, y: 0.4921875}
-      - {x: -0.328125, y: 0.48828125}
-      - {x: -0.3515625, y: 0.484375}
-      - {x: -0.39453125, y: 0.45703125}
-      - {x: -0.4453125, y: 0.4140625}
-      - {x: -0.4921875, y: 0.33984375}
-      - {x: -0.4921875, y: -0.33984375}
-      - {x: -0.44921875, y: -0.41796875}
-      - {x: -0.3828125, y: -0.46484375}
-      - {x: -0.3359375, y: -0.4921875}
-      - {x: 0.35546875, y: -0.4921875}
-      - {x: 0.48046875, y: -0.390625}
-      - {x: 0.4921875, y: -0.34375}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0067489, y: 3.2589164}
+  m_EdgeRadius: 0
 --- !u!1 &146580282
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,11 +449,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventList:
   - eventName: Add Severance Pay
-    callTime: 5
+    callTime: 3.5
     eventDuration: 2
     eventObject: {fileID: 1625829868}
   - eventName: Get Newspaper
-    callTime: 7.5
+    callTime: 6.7
     eventDuration: 9999
     eventObject: {fileID: 146580282}
   - eventName: Select Material
@@ -515,7 +498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &465495110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1779,8 +1762,8 @@ Transform:
   m_GameObject: {fileID: 1499538395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 5, z: 0}
-  m_LocalScale: {x: 4, y: 12, z: 1}
+  m_LocalPosition: {x: -0.5, y: 2, z: 0}
+  m_LocalScale: {x: 2, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2142554402}

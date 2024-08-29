@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class Newspaper : InteractableObject
 {
     GameObject focusedObject;
-    SpriteRenderer spriteRenderer;
+    BoxCollider2D boxCollider2D;
 
     public Newspaper()
     {
@@ -16,7 +16,7 @@ public class Newspaper : InteractableObject
     public void Awake()
     {
         focusedObject = transform.GetChild(0).gameObject;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
     }
     public override void OnClick()
     {
@@ -25,6 +25,6 @@ public class Newspaper : InteractableObject
         isInteractable = false;
         GameManager.Instance.gameState = GameState.Select;
         focusedObject.SetActive(true);
-        spriteRenderer.enabled = false;
+        boxCollider2D.enabled = false;
     }
 }
