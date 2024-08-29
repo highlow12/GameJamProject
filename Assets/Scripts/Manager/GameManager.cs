@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 public enum GameState
 {
@@ -17,7 +16,7 @@ public class GameManager : Singleton<GameManager>
     public float gameTime;
     public Action startAction;
     public Action runningAction;
-    public GameState gameState = GameState.Start;
+    public GameState gameState = GameState.Select;
     private int envPoint { get; set; }
 
     new void Awake()
