@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Ground
+  - Collector
   layers:
   - Default
   - TransparentFX

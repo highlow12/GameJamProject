@@ -26,13 +26,14 @@ public class GarbageSpawn : MonoBehaviour
     {
         if (!manager.hit && !isWaiting)
         {
+            isWaiting = true;
             MoveGarbage();
         }
     }
 
     void Init()
     {
-        // ù Garbage ��ġ
+        // ù Garbage ��ġ
         for (int i = 0; i < spawnPoint.Length; i++)
         {
             garbage = Instantiate(manager.preFabs[Random.Range(0, manager.preFabs.Length)], spawnPoint[i].transform);
