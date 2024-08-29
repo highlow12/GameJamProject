@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class GarbageSpawn : MonoBehaviour
@@ -7,6 +8,7 @@ public class GarbageSpawn : MonoBehaviour
     public GameObject[] spawnPoint;
     GarbageManager manager;
     GameObject garbage;
+    public bool isWaiting = true;
 
 
     private void Awake()
@@ -17,14 +19,17 @@ public class GarbageSpawn : MonoBehaviour
     private void Start()
     {
         Init();
+        isWaiting = false;
     }
 
     void FixedUpdate()
     {
-        if (!manager.hit)
+        if (!manager.hit && !isWaiting)
         {
+            isWaiting = true;
             MoveGarbage();
         }
+        isWaiting = false;
     }
 
     void Init()
