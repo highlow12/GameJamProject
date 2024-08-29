@@ -14,5 +14,7 @@ public class CloseButton : InteractableObject
     {
         // Close the parent object
         transform.parent.gameObject.SetActive(false);
+        // Resume the game time
+        GameManager.Instance.gameState = GameState.Running;
     }
 }

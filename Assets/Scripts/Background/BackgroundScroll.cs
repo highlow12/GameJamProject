@@ -23,6 +23,10 @@ public class BackgroundScroll : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance.gameState != GameState.Running)
+        {
+            return;
+        }
         for (int i = 0; i < backgrounds.Length; i++)
         {
             backgrounds[i].position += new Vector3(-speed, 0, 0) * Time.deltaTime;

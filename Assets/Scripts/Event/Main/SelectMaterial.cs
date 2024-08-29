@@ -2,8 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SortingTrashes : EventData
+public class SelectMaterial : EventData
 {
+    public SelectMaterial()
+    {
+        eventName = "SelectMaterial";
+    }
+    [SerializeField]
+    private GameObject selectUI;
     void Awake()
     {
 
@@ -22,11 +28,13 @@ public class SortingTrashes : EventData
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
-        // Sorting Trashes Minigame
+        // Show the select UI
+        selectUI.SetActive(true);
     }
     public override void OnEventEnd()
     {
         base.OnEventEnd();
-        // End of Sorting Trashes Minigame
+        // Hide the select UI
+        selectUI.SetActive(false);
     }
 }

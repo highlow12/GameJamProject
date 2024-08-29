@@ -19,7 +19,10 @@ public class Newspaper : InteractableObject
     }
     public override void OnClick()
     {
+        // pause the game time
         // Show the focused object
+
+        GameManager.Instance.gameState = GameState.Select;
         focusedObject.SetActive(true);
         spriteRenderer.enabled = false;
     }
