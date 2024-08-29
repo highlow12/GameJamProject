@@ -87,4 +87,8 @@ public class GameManager : Singleton<GameManager>
     {
         money += amount;
     }
+    public void AddEnvPoint(int amount)
+    {
+        envPoint += amount;
+    }
 }

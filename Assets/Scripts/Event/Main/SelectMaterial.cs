@@ -27,8 +27,21 @@ public class SelectMaterial : EventData
 
     public void SetMaterial(int material)
     {
+        GameManager manager = GameManager.Instance;
         // Set the material
-        GameManager.Instance.materialType = (MaterialType)material;
+        manager.materialType = (MaterialType)material;
+        switch ((MaterialType)material)
+        {
+            case MaterialType.Cotton:
+                manager.AddEnvPoint(10);
+                break;
+            case MaterialType.Leather:
+                manager.AddEnvPoint(0);
+                break;
+            case MaterialType.Tencel:
+                manager.AddEnvPoint(20);
+                break;
+        }
         OnEventEnd();
     }
 

@@ -555,15 +555,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventList:
   - eventName: Add Severance Pay
-    callTime: 3
+    callTime: 5
     eventDuration: 2
     eventObject: {fileID: 1625829868}
   - eventName: Get Newspaper
-    callTime: 4.5
+    callTime: 7.5
     eventDuration: 9999
     eventObject: {fileID: 146580282}
   - eventName: Select Material
-    callTime: 6.5
+    callTime: 10.5
     eventDuration: 9999
     eventObject: {fileID: 465495109}
 --- !u!114 &442832751
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 0
-  materialType: 0
+  materialType: 3
   gameState: 1
   money: 0
 --- !u!1 &465495109
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4592466c5506748acaa7d7a79d32ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   backgrounds:
   - {fileID: 516865831}
   - {fileID: 120338837}
