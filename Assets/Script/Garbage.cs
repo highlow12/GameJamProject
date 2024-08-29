@@ -20,30 +20,30 @@ public class Garbage : MonoBehaviour
             {
                 // Need to make singleton alive
                 case CollectorType.River:
-                    // GameManager.Instance.AddEnvPoint(-20);
+                    GameManager.Instance.AddEnvPoint(-20);
                     break;
                 case CollectorType.Ground:
                     if (garbageType == GarbageType.Trash)
                     {
-                        // GameManager.Instance.AddEnvPoint(10);
-                        // GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddEnvPoint(10);
+                        GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
-                        // GameManager.Instance.AddEnvPoint(-10);
-                        // GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddEnvPoint(-10);
+                        GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     break;
                 case CollectorType.Sewage:
                     if (garbageType == GarbageType.Trash)
                     {
-                        // GameManager.Instance.AddEnvPoint(-10);
-                        // GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddEnvPoint(-10);
+                        GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
-                        // GameManager.Instance.AddEnvPoint(10);
-                        // GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddEnvPoint(10);
+                        GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     break;
             }

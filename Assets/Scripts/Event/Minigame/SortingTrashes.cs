@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SortingTrashes : EventData
 {
+    public SortingTrashes()
+    {
+        eventName = "SortingTrashes";
+    }
     void Awake()
     {
 
@@ -22,6 +27,7 @@ public class SortingTrashes : EventData
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
+        SceneManager.LoadScene("MiniGame1", LoadSceneMode.Additive);
         // Sorting Trashes Minigame
     }
     public override void OnEventEnd()
