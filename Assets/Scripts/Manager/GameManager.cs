@@ -15,7 +15,8 @@ public enum MaterialType
 {
     Cotton,
     Leather,
-    Tencel
+    Tencel,
+    Unset
 }
 public class GameManager : Singleton<GameManager>
 {
@@ -76,7 +77,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    void UpdateTime()
+    public void UpdateTime()
     {
         gameTime += 0.02f;
         gameTime = (float)Math.Round(gameTime, 2);

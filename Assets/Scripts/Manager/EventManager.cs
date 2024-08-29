@@ -50,6 +50,7 @@ public class EventManager : MonoBehaviour
         // Call the event
         // Pause the game time
         eventData.OnEventTrigger();
+        GameManager.Instance.UpdateTime();
         // Wait for the event duration
         yield return new WaitForSeconds(eventStruct.eventDuration);
         // Resume the game time

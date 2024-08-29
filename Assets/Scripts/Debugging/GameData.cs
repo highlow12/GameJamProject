@@ -26,6 +26,8 @@ public class GameData : MonoBehaviour
             text += "Game State: " + gameManager.gameState + "\n";
             text += "Money: " + gameManager.money + "\n";
             text += "Env Point: " + gameManager.envPoint + "\n";
+            text += "Material Type: " + gameManager.materialType + "\n";
+            dataText.text = text;
         }
     }
 }
