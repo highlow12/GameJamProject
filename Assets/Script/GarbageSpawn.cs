@@ -8,7 +8,7 @@ public class GarbageSpawn : MonoBehaviour
     public GameObject[] spawnPoint;
     GarbageManager manager;
     GameObject garbage;
-    public bool isWaiting = true;
+    public bool isWaiting;
 
 
     private void Awake()
@@ -19,17 +19,15 @@ public class GarbageSpawn : MonoBehaviour
     private void Start()
     {
         Init();
-        isWaiting = false;
     }
+
 
     void FixedUpdate()
     {
         if (!manager.hit && !isWaiting)
         {
-            isWaiting = true;
             MoveGarbage();
         }
-        isWaiting = false;
     }
 
     void Init()
@@ -46,6 +44,7 @@ public class GarbageSpawn : MonoBehaviour
     // agsd
     void MoveGarbage()
     {
+
         for (int i = spawnPoint.Length - 2; i >= 0; i--)
         {
             spawnPoint[i].transform.GetChild(0).transform.position = spawnPoint[i + 1].transform.position;

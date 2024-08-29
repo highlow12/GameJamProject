@@ -33,8 +33,16 @@ public class GarbageManager : MonoBehaviour
     //garbage 위치 확인
     private void FixedUpdate()
     {
-        hit = Physics2D.Raycast(spawn.spawnPoint[3].transform.position, Vector2.zero, 0, layer);
 
+        hit = Physics2D.Raycast(spawn.spawnPoint[3].transform.position, Vector2.zero, 0, layer);
+        if (!hit)
+        {
+            spawn.isWaiting = true;
+        }
+        else
+        {
+            spawn.isWaiting = false;
+        }
     }
 
     private void Update()
