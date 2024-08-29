@@ -11,6 +11,7 @@ public class Newspaper : InteractableObject
     public Newspaper()
     {
         objectName = "Newspaper";
+        isInteractable = true;
     }
     public void Awake()
     {
@@ -21,7 +22,7 @@ public class Newspaper : InteractableObject
     {
         // pause the game time
         // Show the focused object
-
+        isInteractable = false;
         GameManager.Instance.gameState = GameState.Select;
         focusedObject.SetActive(true);
         spriteRenderer.enabled = false;

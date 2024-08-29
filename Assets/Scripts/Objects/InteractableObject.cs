@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public abstract class InteractableObject : MonoBehaviour
 {
     public string objectName;
+    public bool isInteractable = true;
     public virtual void OnClick()
     {
         Debug.Log("Object Clicked");
