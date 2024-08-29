@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public  Animator animator;
+    void Satrt(){
+        GameManager.Instance.runningAction += SetWalkTrue;
+        GameManager.Instance.selectAction += SetWalkFalse;
+        GameManager.Instance.eventAction += SetWalkFalse;
     }
-
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    public void SetWalkTrue()
     {
-        
+        animator.SetBool("Walk",true);
+    }
+    public void SetWalkFalse()
+    {
+        animator.SetBool("Walk",false);
     }
 }

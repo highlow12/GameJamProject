@@ -24,6 +24,8 @@ public class GameManager : Singleton<GameManager>
     public MaterialType materialType;
     public Action startAction;
     public Action runningAction;
+    public Action eventAction;
+    public Action selectAction;
     public GameState gameState = GameState.Select;
     public int money = 0;
     public int envPoint { get; set; }
@@ -51,8 +53,16 @@ public class GameManager : Singleton<GameManager>
                 }
                 break;
             case GameState.Event:
+                if (eventAction != null)
+                {
+                    eventAction();
+                }
                 break;
             case GameState.Select:
+                if (selectAction != null)
+                {
+                    selectAction();
+                }
                 break;
             case GameState.End:
                 break;
