@@ -7,7 +7,8 @@ public class Newspaper : InteractableObject
 {
     GameObject focusedObject;
     BoxCollider2D boxCollider2D;
-    AudioSource _audio;
+    [SerializeField]
+    private AudioSource _audio;
 
     public Newspaper()
     {

@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class GetNewsPaper : EventData
 {
-    AudioSource _audio;
     public GetNewsPaper()
     {
         eventName = "GetNewsPaper";
     }
     void Awake()
     {
-        _audio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -31,6 +29,5 @@ public class GetNewsPaper : EventData
     public override void OnEventEnd()
     {
         base.OnEventEnd();
-        _audio.Play();
     }
 }
