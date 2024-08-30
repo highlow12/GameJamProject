@@ -6,8 +6,9 @@ public class BallScript : MonoBehaviour
 {
     public Sprite factoryBall;
     public float StopTimer = 2;
-    public int AddMoney = 10;
-    public int AddEnvPoint = -30;
+    public int AddEnvPoint1 = -10;
+    public int AddEnvPoint2 = 10;
+    
 
     Rigidbody2D ballRb;
     SpriteRenderer ballSprite;    
@@ -35,13 +36,14 @@ public class BallScript : MonoBehaviour
         if(other.gameObject.tag == "Forest"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Forest");
             other.gameObject.SetActive(false);
-            GameManager.Instance.AddEnvPoint(AddEnvPoint);
-            GameManager.Instance.TMP += AddEnvPoint;
+            GameManager.Instance.AddEnvPoint(AddEnvPoint1);//수정됨
+            GameManager.Instance.TMP += AddEnvPoint1;
         }
         if(other.gameObject.tag == "Area"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Area");
             other.gameObject.SetActive(false);
-            GameManager.Instance.AddMoney(AddMoney);
+            GameManager.Instance.AddEnvPoint(AddEnvPoint2);//수정됨
+            GameManager.Instance.TMP += AddEnvPoint2;
         }
     }
 
