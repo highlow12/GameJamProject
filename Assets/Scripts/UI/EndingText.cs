@@ -33,6 +33,7 @@ public class EndingText : MonoBehaviour
         }
         OutText += "\n을(를) 선택 하였습니다.";
         StartCoroutine(TypeText(OutText));
+        StartCoroutine(FadeTextCoroutine());
         //미니게임1
         OutText = "원단 재료를 가공하며 생긴 폐기물을\n";
         if(GameManager.Instance.Minigame1Result == MinigameResult.Success){
@@ -41,6 +42,8 @@ public class EndingText : MonoBehaviour
             OutText += "환경 파괴적으로";
         }
         OutText += "\n처리하였습니다.";
+        StartCoroutine(TypeText(OutText));
+        StartCoroutine(FadeTextCoroutine());
         //선택지2
         OutText = "또한, 원단 배송을 위해\n";
         switch(GameManager.Instance.pojangType){
@@ -55,6 +58,8 @@ public class EndingText : MonoBehaviour
                 return;
         }
         OutText += "\n을(를) 선택 하였습니다.";
+        StartCoroutine(TypeText(OutText));
+        StartCoroutine(FadeTextCoroutine());
         //미니게임2
         OutText = "마지막으로 공장을 추가 건설할 때\n";
         if(GameManager.Instance.Minigame1Result == MinigameResult.Success){
@@ -63,6 +68,8 @@ public class EndingText : MonoBehaviour
             OutText += "빈 공터에";
         }
         OutText += "\n건설하였습니다.";
+        StartCoroutine(TypeText(OutText));
+        StartCoroutine(FadeTextCoroutine());
 
 
     } 
