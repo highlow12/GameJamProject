@@ -27,6 +27,8 @@ public class GarbageManagerNew : MonoBehaviour
     int garbageCountInRow = 4;
     bool isMoving = false;
     public int garbageCountTotal = 16;
+    public int currentEnvPoint = 0;
+
     [SerializeField] private List<GameObject> garbages = new();
 
     void Awake()
@@ -44,11 +46,12 @@ public class GarbageManagerNew : MonoBehaviour
 
     void Update()
     {
-        if(MinigameTiemr.Instance.timeRemaining<=0){
-            foreach (GameObject garbage in garbages)
+        if (MinigameTiemr.Instance.timeRemaining <= 0)
         {
-            Destroy(garbage);
-        }
+            foreach (GameObject garbage in garbages)
+            {
+                Destroy(garbage);
+            }
         }
         float maxX = -99999;
 
@@ -68,6 +71,14 @@ public class GarbageManagerNew : MonoBehaviour
         {
             MinigameTiemr.Instance.EndTimer();
             SortingTrashes.Instance.OnEventEnd();
+            if (currentEnvPoint >= 8)
+            {
+                GameManager.Instance.Minigame1Result = MinigameResult.Success;
+            }
+            else
+            {
+                GameManager.Instance.Minigame1Result = MinigameResult.Fail;
+            }
             return;
         }
         if (Input.GetKeyDown(KeyCode.A))
