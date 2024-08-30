@@ -27,13 +27,13 @@ public class Garbage : MonoBehaviour
                     {
                         GameManager.Instance.AddEnvPoint(1);
                         garbageManager.currentEnvPoint += 1;
-                        GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddMoney(-10 * 100000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
                         GameManager.Instance.AddEnvPoint(-1);
                         garbageManager.currentEnvPoint -= 1;
-                        GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddMoney(-10 * 100000);
                     }
                     break;
                 case CollectorType.Sewage:
@@ -41,13 +41,13 @@ public class Garbage : MonoBehaviour
                     {
                         GameManager.Instance.AddEnvPoint(-1);
                         garbageManager.currentEnvPoint -= 1;
-                        GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddMoney(-10 * 100000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
                         GameManager.Instance.AddEnvPoint(1);
                         garbageManager.currentEnvPoint += 1;
-                        GameManager.Instance.AddMoney(-10 * 10000);
+                        GameManager.Instance.AddMoney(-10 * 100000);
                     }
                     break;
             }
