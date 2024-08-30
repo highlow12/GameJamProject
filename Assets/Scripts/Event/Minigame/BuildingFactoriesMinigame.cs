@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SortingTrashes : EventData
+public class BuildingFactoriesMinigame : EventData
 {
-    public static SortingTrashes Instance;
-    public SortingTrashes()
-    {
-        eventName = "SortingTrashes";
-    }
+    public static BuildingFactoriesMinigame Instance;
+
     void Awake()
     {
         Instance = this;
@@ -28,13 +25,13 @@ public class SortingTrashes : EventData
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
-        SceneManager.LoadScene("MiniGame1", LoadSceneMode.Additive);
-        // Sorting Trashes Minigame
+        SceneManager.LoadScene("MiniGame2Scene", LoadSceneMode.Additive);
+        // Building Factories Minigame
     }
     public override void OnEventEnd()
     {
         base.OnEventEnd();
-        SceneManager.UnloadSceneAsync("MiniGame1");
-        // End of Sorting Trashes Minigame
+        // End of Building Factories Minigame
+        SceneManager.UnloadSceneAsync("MiniGame2Scene");
     }
 }

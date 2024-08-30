@@ -16,7 +16,16 @@ public class ClickManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(clickPos, Vector2.zero);
+            RaycastHit2D[] hits = Physics2D.RaycastAll(clickPos, Vector2.zero);
+            RaycastHit2D hit = new();
+            foreach (RaycastHit2D h in hits)
+            {
+                if (h.collider.CompareTag("Interactable"))
+                {
+                    hit = h;
+                    break;
+                }
+            }
             if (hit.collider != null && hit.collider.CompareTag("Interactable"))
             {
                 hit.collider.GetComponent<InteractableObject>().OnClick();

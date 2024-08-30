@@ -195,15 +195,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 773489777
-  m_SortingLayer: 1
+  m_SortingLayerID: 1464181151
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 32, y: 32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -255,18 +255,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08341539, y: 1.089551}
+  m_Offset: {x: 0.20100117, y: 1.1296563}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    border: {x: 2, y: 2, z: 2, w: 3}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 32, y: 32}
+    newSize: {x: 32, y: 32}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0067489, y: 3.2589164}
+  m_Size: {x: 1.9362364, y: 3.1787062}
   m_EdgeRadius: 0
 --- !u!1 &146580282
 GameObject:
@@ -495,25 +495,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventList:
   - eventName: Add Severance Pay
-    callTime: 3.5
+    callTime: 4.5
     eventDuration: 2
     eventObject: {fileID: 1625829868}
   - eventName: Get Newspaper
-    callTime: 6.7
+    callTime: 7.7
     eventDuration: 9999
     eventObject: {fileID: 146580282}
+  - eventName: Change Background
+    callTime: 11.48
+    eventDuration: 0
+    eventObject: {fileID: 1858265779}
   - eventName: Select Material
-    callTime: 10.5
+    callTime: 18
     eventDuration: 9999
     eventObject: {fileID: 465495109}
   - eventName: Change Background
-    callTime: 11
+    callTime: 22.96
     eventDuration: 0
     eventObject: {fileID: 1858265779}
   - eventName: Call SortingTrashes Minigame
-    callTime: 18
-    eventDuration: 60
+    callTime: 26
+    eventDuration: 30
     eventObject: {fileID: 219305273}
+  - eventName: Call BuildingFactories Minigame
+    callTime: 32
+    eventDuration: 9999
+    eventObject: {fileID: 853120307}
 --- !u!114 &442832751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,13 +816,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3165174067242707489, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 2747588085584002265, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8019708
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747588085584002265, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3165174067242707489, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165174067242707489, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.11316
       objectReference: {fileID: 0}
     - target: {fileID: 3165174067242707489, guid: 2f8faf59a9d0d6f41b8cd57a83ea091c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1225,6 +1241,52 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &853120307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853120308}
+  - component: {fileID: 853120309}
+  m_Layer: 0
+  m_Name: CallBuildingFactoriesMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &853120308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853120307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1056403054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853120309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853120307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c82c60b3c844820a39d149d7e5549d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: 
+  isCallable: 1
 --- !u!1 &856271778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1509,7 @@ Transform:
   - {fileID: 1625829869}
   - {fileID: 1858265780}
   - {fileID: 219305274}
+  - {fileID: 853120308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1186752796
@@ -1813,7 +1876,7 @@ Transform:
   m_GameObject: {fileID: 1499538395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 2, z: 0}
+  m_LocalPosition: {x: 0.2, y: 2, z: 0}
   m_LocalScale: {x: 2, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1858,8 +1921,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 773489777
-  m_SortingLayer: 1
+  m_SortingLayerID: 1464181151
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
@@ -2188,6 +2251,7 @@ MonoBehaviour:
   background: {fileID: 516865830}
   backgroundIndex: 0
   backgrounds:
+  - {fileID: 21300000, guid: 3ab7c877051604cbd8659f42116e632b, type: 3}
   - {fileID: 21300000, guid: 82be199e0df6f004695abfdfe78fd9c7, type: 3}
 --- !u!1 &1908487246
 GameObject:
@@ -2739,7 +2803,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1464181151
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f469f8253737d534ca7809ae6f0d2422, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
