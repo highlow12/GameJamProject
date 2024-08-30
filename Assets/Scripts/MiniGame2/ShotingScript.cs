@@ -7,7 +7,8 @@ public class ShotingScript : MonoBehaviour
     public GameObject ball;
     public GameObject arrow;
     public float ballSpeed = 1f;
-    public float rotateSpeed = 100000f;
+    public int curBallNum = 0;
+    public float endingTime = 10f;
     
     Vector3 startPos;
     Vector3 endPos;
@@ -55,6 +56,16 @@ public class ShotingScript : MonoBehaviour
         GameObject newBall = Instantiate(ball, transform.position, Quaternion.identity);
         newBall.GetComponent<Rigidbody2D>().AddForce((endPos-startPos)*ballSpeed*-1, ForceMode2D.Impulse);
         newBall.GetComponent<BallScript>().StartCoroutine("StopBall");
+        curBallNum++;
+        if(curBallNum>=3){
+            StartCoroutine("endingTimer");
+        }
+    }
+    IEnumerator endingTimer(){
+        //변화된 골드와 envPoint의 양을 알려줌
+        //endingTime만큼의 시간이 지나면 이벤트 종료
+        yield return new WaitForSeconds(endingTime);
+        BuildingFactoriesMinigame.Instance.OnEventEnd();
     }
 
     void DragArrow(){
