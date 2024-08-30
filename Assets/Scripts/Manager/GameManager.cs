@@ -48,8 +48,8 @@ public class GameManager : Singleton<GameManager>
     public Text moneyText; // 추가된 변수: 돈 UI 텍스트
     public GameObject endingUIPanel; // 엔딩 UI 패널
 
-    public Button yesButton; 
-    public Button noButton; 
+    public Button yesButton;
+    public Button noButton;
     public int endingGoldAmount = 50000; // 우주선 탑승을 위한 최소 금액
     public bool hiddenEnd = false;
     new void Awake()
@@ -157,12 +157,11 @@ public class GameManager : Singleton<GameManager>
     {
         if (money >= endingGoldAmount && gameState == GameState.Running)
         {
-            gameState = GameState.Event; // 게임 상태를 Event로 변경
-            ShowEndingUI(); // 엔딩 UI 표시
+            hiddenEnd = true;
         }
     }
 
-    private void ShowEndingUI() // 엔딩 UI를 표시하는 메서드
+    public void ShowEndingUI() // 엔딩 UI를 표시하는 메서드
     {
         if (endingUIPanel != null)
         {
@@ -184,6 +183,6 @@ public class GameManager : Singleton<GameManager>
             Debug.Log("배드엔딩: 우주선을 타지 않았습니다.");
         }
         endingUIPanel.SetActive(false); // 엔딩 UI 비활성화
-        gameState = GameState.End; // 게임 상태를 End로 변경
+        CheckHiddenEnd.Instance.OnEventEnd(); // 엔딩 이벤트 종료
     }
 }
