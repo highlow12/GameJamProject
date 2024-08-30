@@ -10,14 +10,14 @@ public class EndingText : MonoBehaviour
     public float typingSpeed = 0.1f; // 글자 출력 속도
     public float fadeDuration = 1f; // 페이드 시간
     
-    private void Start()
+    void Start()
     {
         SetEndingText();
     }
-
+    string OutText = "";
     void SetEndingText()
     {
-        string OutText = "";
+        
         //선택지 1
         OutText = "당신은 원단 재료를 고를 때\n";
         switch(GameManager.Instance.materialType){
