@@ -15,7 +15,10 @@ public abstract class EventData : MonoBehaviour
     public virtual void OnEventEnd()
     {
         isCallable = true;
-        GameManager.Instance.gameState = GameState.Running;
+        if (GameManager.Instance.gameState == GameState.Event)
+        {
+            GameManager.Instance.gameState = GameState.Running;
+        }
         Debug.Log("Event Ended");
     }
 

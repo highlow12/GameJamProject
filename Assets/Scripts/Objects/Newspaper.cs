@@ -23,7 +23,7 @@ public class Newspaper : InteractableObject
     }
     public override void OnClick()
     {
-        _audio.Play();
+        // _audio.Play();
         // pause the game time
         // Show the focused object
         isInteractable = false;

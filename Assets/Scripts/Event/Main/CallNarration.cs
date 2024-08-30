@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CallNarration : EventData
 {
     [SerializeField] private GameObject narrationUI;
-    [SerializeField] private TextMeshProUGUI narrationText;
+    [SerializeField] private Text narrationText;
     [SerializeField] private List<string> narrations = new();
     private int narrationIndex = 0;
     public CallNarration()
@@ -32,7 +33,9 @@ public class CallNarration : EventData
     {
         base.OnEventTrigger();
         narrationUI.SetActive(true);
-        narrationText.text = narrations[narrationIndex];
+        string narration = narrations[narrationIndex];
+        narration.Replace("\\n", "\n");
+        narrationText.text = narration;
         narrationIndex++;
     }
     public override void OnEventEnd()
