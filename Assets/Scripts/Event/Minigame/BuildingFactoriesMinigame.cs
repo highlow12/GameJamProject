@@ -33,5 +33,9 @@ public class BuildingFactoriesMinigame : EventData
         base.OnEventEnd();
         // End of Building Factories Minigame
         SceneManager.UnloadSceneAsync("MiniGame2Scene");
+
+        if(GameManager.Instance.TMP <= -30){
+            GameManager.Instance.Minigame2Result = MinigameResult.Fail;
+        }
     }
 }

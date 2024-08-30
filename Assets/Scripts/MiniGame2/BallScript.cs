@@ -6,6 +6,8 @@ public class BallScript : MonoBehaviour
 {
     public Sprite factoryBall;
     public float StopTimer = 2;
+    public int AddMoney = 10;
+    public int AddEnvPoint = -10;
 
     Rigidbody2D ballRb;
     SpriteRenderer ballSprite;    
@@ -33,12 +35,13 @@ public class BallScript : MonoBehaviour
         if(other.gameObject.tag == "Forest"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Forest");
             other.gameObject.SetActive(false);
-            //점수 깍기
+            GameManager.Instance.AddEnvPoint(AddEnvPoint);
+            GameManager.Instance.TMP += AddEnvPoint;
         }
         if(other.gameObject.tag == "Area"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Area");
             other.gameObject.SetActive(false);
-            //돈 올리기
+            GameManager.Instance.AddMoney(AddMoney);
         }
     }
 

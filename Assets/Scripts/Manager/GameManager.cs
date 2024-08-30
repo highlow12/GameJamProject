@@ -41,6 +41,7 @@ public class GameManager : Singleton<GameManager>
     public Action eventAction;
     public Action selectAction;
     public GameState gameState = GameState.Select;
+    public int TMP = 0;
     public int money = 0;
     public int envPoint { get; set; }
 
