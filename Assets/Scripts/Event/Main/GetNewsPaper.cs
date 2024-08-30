@@ -27,7 +27,6 @@ public class GetNewsPaper : EventData
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
-        audio.Play();
     }
     public override void OnEventEnd()
     {
