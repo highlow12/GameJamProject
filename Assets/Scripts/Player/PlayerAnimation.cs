@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     public  Animator animator;
-    AudioSource audio;
+    AudioSource _audio;
 
     private void Awake()
     {
-        audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
     }
     void Start(){
         GameManager.Instance.runningAction += SetWalkTrue;
@@ -20,11 +20,11 @@ public class PlayerAnimation : MonoBehaviour
     public void SetWalkTrue()
     {
         animator.SetBool("Walk",true);
-        audio.mute = false;
+        _audio.mute = false;
     }
     public void SetWalkFalse()
     {
         animator.SetBool("Walk",false);
-        audio.mute = true;
+        _audio.mute = true;
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine.EventSystems;
 
 public class CloseButton : InteractableObject
 {
-    AudioSource audio;
+    AudioSource _audio;
 
     private void Awake()
     {
-        audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
     }
     public CloseButton()
     {
@@ -17,7 +17,7 @@ public class CloseButton : InteractableObject
     }
     public override void OnClick()
     {
-        audio.Play();
+        _audio.Play();
         // Close the parent object
         transform.parent.gameObject.SetActive(false);
         // Resume the game time

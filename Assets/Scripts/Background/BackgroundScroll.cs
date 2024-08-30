@@ -7,7 +7,7 @@ public class BackgroundScroll : MonoBehaviour
     public float speed;
     public Transform[] backgrounds;
 
-    float leftPosX = 0f;
+    float leftPosX = -0.3f;
     float rightPosX = 0f;
     float xScreenHalfSize;
     float yScreenHalfSize;

@@ -32,7 +32,9 @@ public class CallNarration : EventData
     {
         base.OnEventTrigger();
         narrationUI.SetActive(true);
-        narrationText.text = narrations[narrationIndex];
+        string narration = narrations[narrationIndex];
+        narration.Replace("\\n", "\n");
+        narrationText.text = narration;
         narrationIndex++;
     }
     public override void OnEventEnd()

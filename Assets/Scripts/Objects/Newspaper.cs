@@ -7,7 +7,7 @@ public class Newspaper : InteractableObject
 {
     GameObject focusedObject;
     BoxCollider2D boxCollider2D;
-    AudioSource audio;
+    AudioSource _audio;
 
     public Newspaper()
     {
@@ -18,11 +18,11 @@ public class Newspaper : InteractableObject
     {
         focusedObject = transform.GetChild(0).gameObject;
         boxCollider2D = GetComponent<BoxCollider2D>();
-        audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
     }
     public override void OnClick()
     {
-        audio.Play();
+        _audio.Play();
         // pause the game time
         // Show the focused object
         isInteractable = false;
