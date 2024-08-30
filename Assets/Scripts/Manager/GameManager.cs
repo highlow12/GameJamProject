@@ -18,6 +18,12 @@ public enum MaterialType
     Tencel,
     Unset
 }
+public enum PojangType
+{
+    Paper,
+    Aircap,
+    Vinil
+}
 public enum MinigameResult
 {
     Success,
@@ -27,6 +33,7 @@ public class GameManager : Singleton<GameManager>
 {
     public float gameTime;
     public MaterialType materialType;
+    public PojangType pojangType;
     public MinigameResult Minigame1Result;
     public MinigameResult Minigame2Result;
     public Action startAction;
@@ -34,6 +41,7 @@ public class GameManager : Singleton<GameManager>
     public Action eventAction;
     public Action selectAction;
     public GameState gameState = GameState.Select;
+    public int TMP = 0;
     public int money = 0;
     public int envPoint { get; set; }
 

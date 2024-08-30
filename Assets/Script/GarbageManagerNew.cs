@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum CollectorType
 {
@@ -28,6 +29,7 @@ public class GarbageManagerNew : MonoBehaviour
     bool isMoving = false;
     public int garbageCountTotal = 16;
     [SerializeField] private List<GameObject> garbages = new();
+    public int currentEnvPoint = 0;
 
     void Awake()
     {
@@ -62,6 +64,11 @@ public class GarbageManagerNew : MonoBehaviour
         {
             MinigameTiemr.Instance.EndTimer();
             SortingTrashes.Instance.OnEventEnd();
+            if(currentEnvPoint >= 80){
+                GameManager.Instance.Minigame1Result = MinigameResult.Success;
+            }else{
+                GameManager.Instance.Minigame1Result = MinigameResult.Fail;
+            }
             return;
         }
         if (Input.GetKeyDown(KeyCode.A))
@@ -140,6 +147,6 @@ public class GarbageManagerNew : MonoBehaviour
             yield return null;
         }
     }
-
-
 }
+
+    
