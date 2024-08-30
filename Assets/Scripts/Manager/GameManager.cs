@@ -47,6 +47,7 @@ public class GameManager : Singleton<GameManager>
     public int envPoint { get; set; }
     public Text moneyText; // 추가된 변수: 돈 UI 텍스트
     public GameObject endingUIPanel; // 엔딩 UI 패널
+
     public Button yesButton; 
     public Button noButton; 
     public int endingGoldAmount = 50000; // 우주선 탑승을 위한 최소 금액

@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af38e2ae6fba9474f96d2a8a3112db14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 24
+  gameTime: 0
   materialType: 3
   pojangType: 0
   Minigame1Result: 0
