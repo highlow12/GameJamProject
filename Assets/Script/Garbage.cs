@@ -26,11 +26,13 @@ public class Garbage : MonoBehaviour
                     if (garbageType == GarbageType.Trash)
                     {
                         GameManager.Instance.AddEnvPoint(10);
+                        garbageManager.currentEnvPoint += 10;
                         GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
                         GameManager.Instance.AddEnvPoint(-10);
+                        garbageManager.currentEnvPoint -= 10;
                         GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     break;
@@ -38,11 +40,13 @@ public class Garbage : MonoBehaviour
                     if (garbageType == GarbageType.Trash)
                     {
                         GameManager.Instance.AddEnvPoint(-10);
+                        garbageManager.currentEnvPoint -= 10;
                         GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     else if (garbageType == GarbageType.Oil)
                     {
                         GameManager.Instance.AddEnvPoint(10);
+                        garbageManager.currentEnvPoint += 10;
                         GameManager.Instance.AddMoney(-10 * 10000);
                     }
                     break;
