@@ -5,8 +5,13 @@ using UnityEngine;
 
 public class MinigameTiemr : MonoBehaviour
 {
+    public static MinigameTiemr Instance;
     public float timeRemaining;
     public TextMeshProUGUI timeText;
+    void Awake()
+    {
+        Instance = this;
+    }
     void FixedUpdate()
     {
         if (timeRemaining > 0)
@@ -18,5 +23,10 @@ public class MinigameTiemr : MonoBehaviour
             GameManager.Instance.gameState = GameState.Running;
         }
         timeText.text = timeRemaining.ToString("F2");
+    }
+
+    public void EndTimer()
+    {
+        timeRemaining = 0;
     }
 }
