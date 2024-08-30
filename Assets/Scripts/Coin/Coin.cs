@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    Animator ani;
+    Animator ani = null;
     public int money = 10;
     void Start(){
-        ani = GetComponent<Animator>();
-        ani.SetBool("spin", true);
+        if(ani!=null){
+            ani = GetComponent<Animator>();
+            ani.SetBool("spin", true);
+        }
+        
     }
 
     void OnTriggerEnter2D(Collider2D other){
