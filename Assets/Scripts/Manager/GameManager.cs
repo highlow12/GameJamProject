@@ -33,6 +33,7 @@ public class GameManager : Singleton<GameManager>
 {
     public float gameTime;
     public MaterialType materialType;
+    public PojangType pojangType;
     public MinigameResult Minigame1Result;
     public MinigameResult Minigame2Result;
     public Action startAction;
