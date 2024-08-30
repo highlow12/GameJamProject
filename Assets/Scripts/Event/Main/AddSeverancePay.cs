@@ -5,6 +5,7 @@ using UnityEngine;
 public class AddSeverancePay : EventData
 {
     private bool isGiven = false;
+    AudioSource audio;
 
     public AddSeverancePay()
     {
@@ -12,7 +13,7 @@ public class AddSeverancePay : EventData
     }
     void Awake()
     {
-
+        audio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -30,6 +31,7 @@ public class AddSeverancePay : EventData
         if (isGiven) return;
         base.OnEventTrigger();
         GameManager.Instance.AddMoney(1000 * 10000); // 퇴직금 1000만원 추가
+        audio.Play();
         isGiven = true;
     }
     public override void OnEventEnd()
