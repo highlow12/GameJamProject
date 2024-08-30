@@ -6,6 +6,7 @@ public class BallScript : MonoBehaviour
 {
     public Sprite factoryBall;
     public float StopTimer = 2;
+    public GameObject shotingObject;
 
     Rigidbody2D ballRb;
     SpriteRenderer ballSprite;    
@@ -15,6 +16,7 @@ public class BallScript : MonoBehaviour
     }
     void Update()
     {
+        
         
     }
 
@@ -26,6 +28,7 @@ public class BallScript : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         gameObject.tag = "Ball";
         ballSprite.sprite = factoryBall;
+        GameManager.Instance.money -= 100000;
         //돈 감소
 
     }
@@ -33,11 +36,14 @@ public class BallScript : MonoBehaviour
         if(other.gameObject.tag == "Forest"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Forest");
             other.gameObject.SetActive(false);
+            GameManager.Instance.envPoint -= 20;
             //점수 깍기
         }
         if(other.gameObject.tag == "Area"&&gameObject.tag == "Ball"){
             Debug.Log("Ball is in the Area");
             other.gameObject.SetActive(false);
+            GameManager.Instance.money += 200000;
+
             //돈 올리기
         }
     }
