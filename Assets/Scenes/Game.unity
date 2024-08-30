@@ -600,21 +600,37 @@ MonoBehaviour:
     eventDuration: 9999
     eventObject: {fileID: 146580282}
   - eventName: Change Background
-    callTime: 11.52
-    eventDuration: 0
+    callTime: 11.5
+    eventDuration: 0.5
     eventObject: {fileID: 1858265779}
   - eventName: Select Material
     callTime: 18
     eventDuration: 9999
     eventObject: {fileID: 465495109}
   - eventName: Change Background
-    callTime: 23.02
-    eventDuration: 0
+    callTime: 23
+    eventDuration: 0.5
     eventObject: {fileID: 1858265779}
-  - eventName: Call SortingTrashes Minigame
-    callTime: 26
+  - eventName: Call Narration
+    callTime: 24.9
+    eventDuration: 5
+    eventObject: {fileID: 927249412}
+  - eventName: Call Narration
+    callTime: 24.92
+    eventDuration: 5
+    eventObject: {fileID: 927249412}
+  - eventName: Call Sorting Trashes Minigame
+    callTime: 25
     eventDuration: 30
     eventObject: {fileID: 219305273}
+  - eventName: Call Narration
+    callTime: 31.9
+    eventDuration: 5
+    eventObject: {fileID: 927249412}
+  - eventName: Call Narration
+    callTime: 31.92
+    eventDuration: 5
+    eventObject: {fileID: 927249412}
   - eventName: Call BuildingFactories Minigame
     callTime: 32
     eventDuration: 9999
@@ -635,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af38e2ae6fba9474f96d2a8a3112db14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 0
+  gameTime: 20
   materialType: 3
 <<<<<<< HEAD
   pojangType: 0
@@ -1712,10 +1728,15 @@ MonoBehaviour:
   narrationUI: {fileID: 849015291}
   narrationText: {fileID: 1875774917}
   narrations:
-  - 
-  - 
-  - 
-  - 
+  - "\uD3D0\uAE30\uBB3C \uCC98\uB9AC\uD558\uAE30!\\n A, S, D\uB97C \uB20C\uB7EC \uC6D0\uD558\uB294
+    \uBC29\uC2DD\uC73C\uB85C \uC4F0\uB9AC\uAE30\uB97C \uCC98\uB9AC\uD558\uC790!"
+  - "\uB2F9\uC2E0\uC758 \uC120\uD0DD\uC5D0 \uB530\uB77C, \uD3D0\uAE30 \uCC98\uB9AC
+    \uBE44\uC6A9\uACFC \uD658\uACBD\uC5D0 \uBBF8\uCE58\uB294 \uC601\uD5A5\uC774 \uB2EC\uB77C\uC9D1\uB2C8\uB2E4."
+  - "\uACF5\uC7A5 \uCD94\uAC00 \uAC74\uC124\uD558\uAE30!\\n\uC0AC\uC5C5 \uADDC\uBAA8\uAC00
+    \uCEE4\uC84C\uC2B5\uB2C8\uB2E4! \uACE0\uBB34\uC904\uC5D0 \uD295\uAE30\uB4EF\uC774
+    \uC3D8\uC544 \uACF5\uC7A5\uC744 \uC6D0\uD558\uB294 \uC704\uCE58\uC5D0 \uAC74\uC124\uD558\uC138\uC694!"
+  - "\uB2F9\uC2E0\uC758 \uC120\uD0DD\uC5D0 \uB530\uB77C, \uD658\uACBD\uC5D0 \uBBF8\uCE58\uB294
+    \uC601\uD5A5\uC774 \uB2EC\uB77C\uC9D1\uB2C8\uB2E4."
   - 
   - 
   - 
