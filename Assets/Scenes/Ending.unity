@@ -467,6 +467,11 @@ MonoBehaviour:
   textMeshPro: {fileID: 1090955371}
   typingSpeed: 0.1
   fadeDuration: 1
+  sprites:
+  - {fileID: 21300000, guid: c6f2e82a59c99b241ac1caccbdd870ea, type: 3}
+  - {fileID: 21300000, guid: cf46b641e6468034b8548163c661b5b5, type: 3}
+  - {fileID: 21300000, guid: 881e92b8aba95154cbcf38f910056741, type: 3}
+  _renderer: {fileID: 892625739}
 --- !u!114 &1180243732
 MonoBehaviour:
   m_ObjectHideFlags: 0
