@@ -19,6 +19,7 @@ public enum MaterialType
     Tencel,
     Unset
 }
+
 public enum PojangType
 {
     Paper,
