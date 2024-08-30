@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Newspaper
   isInteractable: 1
+  _audio: {fileID: 0}
 --- !u!61 &120338842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -554,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af38e2ae6fba9474f96d2a8a3112db14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 20
+  gameTime: 0
   materialType: 3
   pojangType: 0
   Minigame1Result: 0
@@ -987,7 +988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &563398263
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3783,6 +3784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: CloseButton
   isInteractable: 1
+  _audio: {fileID: 0}
 --- !u!61 &2142554405
 BoxCollider2D:
   m_ObjectHideFlags: 0

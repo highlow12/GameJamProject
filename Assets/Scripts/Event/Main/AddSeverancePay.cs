@@ -15,7 +15,14 @@ public class AddSeverancePay : EventData
     void Awake()
     {
         _audio = GetComponent<AudioSource>();
+
+        // AudioSource가 null인지 체크
+        if (_audio == null)
+        {
+            Debug.LogError("AudioSource component is missing on this GameObject.");
+        }
     }
+
 
     void Start()
     {
@@ -34,6 +41,15 @@ public class AddSeverancePay : EventData
         GameManager.Instance.AddMoney(1000 * 10000); // 퇴직금 1000만원 추가
         _audio.Play();
         isGiven = true;
+
+        if (_audio != null)
+        {
+            _audio.Play();
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource is null, cannot play audio.");
+        }
     }
     public override void OnEventEnd()
     {
