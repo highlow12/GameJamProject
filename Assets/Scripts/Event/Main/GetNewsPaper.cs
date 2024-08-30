@@ -25,11 +25,9 @@ public class GetNewsPaper : EventData
     public override void OnEventTrigger()
     {
         base.OnEventTrigger();
-        Newspaper.Instance.isInteractable = true;
     }
     public override void OnEventEnd()
     {
         base.OnEventEnd();
-        Newspaper.Instance.isInteractable = false;
     }
 }

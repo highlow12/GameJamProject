@@ -28,10 +28,7 @@ public class ClickManager : MonoBehaviour
             }
             if (hit.collider != null && hit.collider.CompareTag("Interactable"))
             {
-                if (hit.collider.GetComponent<InteractableObject>().isInteractable)
-                {
-                    hit.collider.GetComponent<InteractableObject>().OnClick();
-                }
+                hit.collider.GetComponent<InteractableObject>().OnClick();
             }
         }
     }
