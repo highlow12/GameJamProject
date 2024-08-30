@@ -682,6 +682,10 @@ MonoBehaviour:
     callTime: 32
     eventDuration: 9999
     eventObject: {fileID: 853120307}
+  - eventName: Check Hidden End
+    callTime: 33
+    eventDuration: 30
+    eventObject: {fileID: 1454703782}
   - eventName: Call Ending
     callTime: 34
     eventDuration: 9999
@@ -711,6 +715,7 @@ MonoBehaviour:
   yesButton: {fileID: 1959922322}
   noButton: {fileID: 682168936}
   endingGoldAmount: 50000
+  hiddenEnd: 0
 --- !u!1 &465495109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2135,7 @@ Transform:
   - {fileID: 853120308}
   - {fileID: 927249413}
   - {fileID: 1669301806}
+  - {fileID: 1454703783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104072208
@@ -2627,6 +2633,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416928433}
   m_CullTransparentMesh: 1
+--- !u!1 &1454703782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454703783}
+  - component: {fileID: 1454703784}
+  m_Layer: 0
+  m_Name: CheckHiddenEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454703783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454703782}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1056403054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454703784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454703782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b49a401277646129a98d3317bd624f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: CheckHiddenEnd
+  isCallable: 1
 --- !u!1 &1499538395
 GameObject:
   m_ObjectHideFlags: 0
