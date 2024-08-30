@@ -2614,10 +2614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: AddSeverancePay
   isCallable: 1
-<<<<<<< Updated upstream
-=======
   _audio: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &1635427694
 GameObject:
   m_ObjectHideFlags: 0
