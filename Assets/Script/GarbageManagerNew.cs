@@ -71,7 +71,7 @@ public class GarbageManagerNew : MonoBehaviour
         {
             MinigameTiemr.Instance.EndTimer();
             SortingTrashes.Instance.OnEventEnd();
-            if (currentEnvPoint >= 8)
+            if (currentEnvPoint >= 4)
             {
                 GameManager.Instance.Minigame1Result = MinigameResult.Success;
             }
