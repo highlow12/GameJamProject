@@ -18,7 +18,6 @@ public class CloseButton : InteractableObject
     }
     public override void OnClick()
     {
-        _audio.Play();
         // Close the parent object
         transform.parent.gameObject.SetActive(false);
         // Resume the game time

@@ -32,7 +32,6 @@ public class AddSeverancePay : EventData
         if (isGiven) return;
         base.OnEventTrigger();
         GameManager.Instance.AddMoney(1000 * 10000); // 퇴직금 1000만원 추가
-        _audio.Play();
         isGiven = true;
     }
     public override void OnEventEnd()

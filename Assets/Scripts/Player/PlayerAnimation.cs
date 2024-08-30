@@ -22,11 +22,9 @@ public class PlayerAnimation : MonoBehaviour
     public void SetWalkTrue()
     {
         animator.SetBool("Walk", true);
-        _audio.mute = false;
     }
     public void SetWalkFalse()
     {
         animator.SetBool("Walk", false);
-        _audio.mute = true;
     }
 }
