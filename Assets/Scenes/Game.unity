@@ -563,10 +563,17 @@ MonoBehaviour:
   gameState: 1
   TMP: 0
   money: 0
+<<<<<<< Updated upstream
   moneyText: {fileID: 1308717470}
   endingUIPanel: {fileID: 563398262}
   yesButton: {fileID: 1959922322}
   noButton: {fileID: 682168936}
+=======
+  moneyText: {fileID: 0}
+  endingUIPanel: {fileID: 0}
+  yesButton: {fileID: 0}
+  noButton: {fileID: 0}
+>>>>>>> Stashed changes
   endingGoldAmount: 50000
 --- !u!1 &465495109
 GameObject:
@@ -1937,7 +1944,7 @@ MonoBehaviour:
   eventName: CallNarration
   isCallable: 1
   narrationUI: {fileID: 849015291}
-  narrationText: {fileID: 1875774917}
+  narrationText: {fileID: 0}
   narrations:
   - "\uD3D0\uAE30\uBB3C \uCC98\uB9AC\uD558\uAE30!\\n A, S, D\uB97C \uB20C\uB7EC \uC6D0\uD558\uB294
     \uBC29\uC2DD\uC73C\uB85C \uC4F0\uB9AC\uAE30\uB97C \uCC98\uB9AC\uD558\uC790!"
