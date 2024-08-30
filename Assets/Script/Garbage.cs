@@ -6,11 +6,9 @@ public class Garbage : MonoBehaviour
 {
     public GarbageType garbageType;
     GarbageManagerNew garbageManager;
-    AudioSource audio;
 
     void Awake()
     {
-        audio = GetComponent<AudioSource>();
         garbageManager = GarbageManagerNew.instance;
     }
 
