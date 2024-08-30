@@ -7,7 +7,7 @@ public class BallScript : MonoBehaviour
     public Sprite factoryBall;
     public float StopTimer = 2;
     public int AddMoney = 10;
-    public int AddEnvPoint = -10;
+    public int AddEnvPoint = -30;
 
     Rigidbody2D ballRb;
     SpriteRenderer ballSprite;    
