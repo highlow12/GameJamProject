@@ -18,10 +18,17 @@ public enum MaterialType
     Tencel,
     Unset
 }
+public enum MinigameResult
+{
+    Success,
+    Fail
+}
 public class GameManager : Singleton<GameManager>
 {
     public float gameTime;
     public MaterialType materialType;
+    public MinigameResult Minigame1Result;
+    public MinigameResult Minigame2Result;
     public Action startAction;
     public Action runningAction;
     public Action eventAction;
