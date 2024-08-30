@@ -563,17 +563,10 @@ MonoBehaviour:
   gameState: 1
   TMP: 0
   money: 0
-<<<<<<< Updated upstream
   moneyText: {fileID: 1308717470}
   endingUIPanel: {fileID: 563398262}
   yesButton: {fileID: 1959922322}
   noButton: {fileID: 682168936}
-=======
-  moneyText: {fileID: 0}
-  endingUIPanel: {fileID: 0}
-  yesButton: {fileID: 0}
-  noButton: {fileID: 0}
->>>>>>> Stashed changes
   endingGoldAmount: 50000
 --- !u!1 &465495109
 GameObject:
