@@ -3039,7 +3039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD150\uC2E4"
+  m_text: "\uD150\uC140"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5acf7ce7b693e054f930930bcb87894d, type: 2}
   m_sharedMaterial: {fileID: 5196487976386402274, guid: 5acf7ce7b693e054f930930bcb87894d, type: 2}
