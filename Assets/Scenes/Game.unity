@@ -782,7 +782,7 @@ MonoBehaviour:
     eventObject: {fileID: 146580282}
   - eventName: Change Background
     callTime: 11.5
-    eventDuration: 0.5
+    eventDuration: 0
     eventObject: {fileID: 1858265779}
   - eventName: Select Material
     callTime: 18
@@ -790,7 +790,7 @@ MonoBehaviour:
     eventObject: {fileID: 465495109}
   - eventName: Change Background
     callTime: 23
-    eventDuration: 0.5
+    eventDuration: 0
     eventObject: {fileID: 1858265779}
   - eventName: Call Narration
     callTime: 24.9
