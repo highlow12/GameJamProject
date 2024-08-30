@@ -18,6 +18,12 @@ public enum MaterialType
     Tencel,
     Unset
 }
+public enum PojangType
+{
+    Paper,
+    Aircap,
+    Vinil
+}
 public enum MinigameResult
 {
     Success,
