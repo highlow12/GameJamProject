@@ -162,6 +162,26 @@ public class EndingText : MonoBehaviour
     }
 
     IEnumerator asffdas(){
-        string f = "돈만 보고 달려온 당신은 지구 온난화를 가속시켰으며 모은 돈으로 지구를 탈출하였습니  다.\n당신의 환경 지수는 ‘";
+        string f = "돈만 보고 달려온 당신은 지구 온난화를 가속시켰으며 모은 돈으로 지구를 탈출하였 습니다.\n당신의 환경 지수는 '";
+        f += GameManager.Instance.envPoint;
+        f += "' 입니다.";
+        string Text = f;
+        foreach (char letter in Text.ToCharArray())
+        {
+            textMeshPro.text += letter; // 한 글자씩 추가
+            yield return new WaitForSeconds(typingSpeed); // 지정한 시간만큼 대기
+        }
+
+        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+        {
+            float alpha = Mathf.Lerp(1, 0, t / fadeDuration);
+            SetAlpha(alpha);
+            yield return null;
+        }
+        SetAlpha(0); // 확실히 0으로 설정
+        textMeshPro.text = "";
+        // 알파 값을 0에서 1로 늘리기
+        SetAlpha(1); // 확실히 1로 설정
+        yield return new WaitForSeconds(0.5f);
         yield return null;}
 }

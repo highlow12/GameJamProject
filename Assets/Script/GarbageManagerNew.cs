@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public enum CollectorType
 {
@@ -19,7 +18,6 @@ public enum GarbageType
 
 public class GarbageManagerNew : MonoBehaviour
 {
-    AudioSource audio;
     public static GarbageManagerNew instance;
     public List<GameObject> garbagePrefabs;
     public Vector3 initialPosition;
@@ -30,11 +28,9 @@ public class GarbageManagerNew : MonoBehaviour
     bool isMoving = false;
     public int garbageCountTotal = 16;
     [SerializeField] private List<GameObject> garbages = new();
-    public int currentEnvPoint = 0;
 
     void Awake()
     {
-        audio = GetComponent<AudioSource>();
         if (instance == null)
         {
             instance = this;
@@ -48,6 +44,12 @@ public class GarbageManagerNew : MonoBehaviour
 
     void Update()
     {
+        if(MinigameTiemr.Instance.timeRemaining<=0){
+            foreach (GameObject garbage in garbages)
+        {
+            Destroy(garbage);
+        }
+        }
         float maxX = -99999;
 
         foreach (GameObject garbage in garbages)
@@ -66,14 +68,9 @@ public class GarbageManagerNew : MonoBehaviour
         {
             MinigameTiemr.Instance.EndTimer();
             SortingTrashes.Instance.OnEventEnd();
-            if(currentEnvPoint >= 80){
-                GameManager.Instance.Minigame1Result = MinigameResult.Success;
-            }else{
-                GameManager.Instance.Minigame1Result = MinigameResult.Fail;
-            }
             return;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[0].transform.position));
@@ -83,7 +80,7 @@ public class GarbageManagerNew : MonoBehaviour
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[1].transform.position));
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[2].transform.position));
@@ -129,7 +126,6 @@ public class GarbageManagerNew : MonoBehaviour
 
     public void DespawnGarbage(GameObject garbage)
     {
-        audio.Play();
         isMoving = false;
         garbages.Remove(garbage);
         spawnedGarbageCount--;
@@ -150,6 +146,6 @@ public class GarbageManagerNew : MonoBehaviour
             yield return null;
         }
     }
-}
 
-    
+
+}
