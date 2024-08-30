@@ -178,6 +178,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -239,6 +247,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -299,6 +315,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -453,6 +477,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -513,6 +545,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -575,6 +615,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -635,6 +683,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -697,6 +753,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -757,6 +821,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -829,6 +901,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -889,6 +969,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -951,6 +1039,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1011,6 +1107,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1073,6 +1177,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1133,6 +1245,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1195,6 +1315,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1255,8 +1383,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1464181151
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f5d2f0bf1378d5479b191f78b8087d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1390,6 +1518,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1450,6 +1586,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1512,6 +1656,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1568,6 +1720,14 @@ PrefabInstance:
     - target: {fileID: 2476125959608607135, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
       propertyPath: m_Name
       value: MoneyArea (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1630,6 +1790,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1690,6 +1858,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1752,6 +1928,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1812,6 +1996,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1874,6 +2066,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1934,6 +2134,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1996,6 +2204,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2009,6 +2225,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 969914450}
     m_Modifications:
+    - target: {fileID: 824716753323824118, guid: 7032bb2551ddaec4dbfa77a7c50684d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 824716753323824118, guid: 7032bb2551ddaec4dbfa77a7c50684d2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 824716753323824118, guid: 7032bb2551ddaec4dbfa77a7c50684d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     - target: {fileID: 1458701274627383873, guid: 7032bb2551ddaec4dbfa77a7c50684d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2114,6 +2342,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2174,6 +2410,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2236,6 +2480,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2296,6 +2548,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2358,6 +2618,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2418,6 +2686,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2480,6 +2756,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2536,6 +2820,14 @@ PrefabInstance:
     - target: {fileID: 2476125959608607135, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
       propertyPath: m_Name
       value: MoneyArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2612,9 +2904,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: 1464181151
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -2682,6 +2974,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2738,6 +3038,14 @@ PrefabInstance:
     - target: {fileID: 2476125959608607135, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
       propertyPath: m_Name
       value: MoneyArea (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2800,6 +3108,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2860,6 +3176,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2922,6 +3246,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2978,6 +3310,14 @@ PrefabInstance:
     - target: {fileID: 2476125959608607135, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
       propertyPath: m_Name
       value: MoneyArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004583789400044921, guid: 7a54a2a2042dfc04d81fc1b0663409a3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3039,6 +3379,14 @@ PrefabInstance:
     - target: {fileID: 5955121260540714813, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
       propertyPath: m_TagString
       value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875958782588197651, guid: ca8aba018e8aa0749a24ba51ce534656, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1464181151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
