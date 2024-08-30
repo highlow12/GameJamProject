@@ -502,20 +502,24 @@ MonoBehaviour:
     callTime: 7.7
     eventDuration: 9999
     eventObject: {fileID: 146580282}
+  - eventName: Change Background
+    callTime: 11.48
+    eventDuration: 0
+    eventObject: {fileID: 1858265779}
   - eventName: Select Material
-    callTime: 10.5
+    callTime: 18
     eventDuration: 9999
     eventObject: {fileID: 465495109}
   - eventName: Change Background
-    callTime: 11.5
+    callTime: 22.96
     eventDuration: 0
     eventObject: {fileID: 1858265779}
   - eventName: Call SortingTrashes Minigame
-    callTime: 18
+    callTime: 26
     eventDuration: 30
     eventObject: {fileID: 219305273}
   - eventName: Call BuildingFactories Minigame
-    callTime: 30
+    callTime: 32
     eventDuration: 9999
     eventObject: {fileID: 853120307}
 --- !u!114 &442832751
@@ -2247,6 +2251,7 @@ MonoBehaviour:
   background: {fileID: 516865830}
   backgroundIndex: 0
   backgrounds:
+  - {fileID: 21300000, guid: 3ab7c877051604cbd8659f42116e632b, type: 3}
   - {fileID: 21300000, guid: 82be199e0df6f004695abfdfe78fd9c7, type: 3}
 --- !u!1 &1908487246
 GameObject:
