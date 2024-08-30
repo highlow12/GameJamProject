@@ -73,7 +73,7 @@ public class GarbageManagerNew : MonoBehaviour
             }
             return;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[0].transform.position));
@@ -83,7 +83,7 @@ public class GarbageManagerNew : MonoBehaviour
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[1].transform.position));
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             isMoving = true;
             StartCoroutine(MoveGarbage(currentGarbage, collector[2].transform.position));
