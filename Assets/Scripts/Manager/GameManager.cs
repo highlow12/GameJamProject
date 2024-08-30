@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Ãß°¡µÈ ÄÚµå: UI °ü·Ã ±â´ÉÀ» »ç¿ëÇÏ±â À§ÇÑ ³×ÀÓ½ºÆäÀÌ½º
+using UnityEngine.UI; // ì¶”ê°€ëœ ì½”ë“œ: UI ê´€ë ¨ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•œ ë„¤ì„ìŠ¤í˜ì´ìŠ¤
 public enum GameState
 {
     Start,
@@ -45,12 +45,12 @@ public class GameManager : Singleton<GameManager>
     public int TMP = 0;
     public int money = 0;
     public int envPoint { get; set; }
-    public Text moneyText; // Ãß°¡µÈ º¯¼ö: µ· UI ÅØ½ºÆ®
-    public GameObject endingUIPanel; // ¿£µù UI ÆĞ³Î
+    public Text moneyText; // ì¶”ê°€ëœ ë³€ìˆ˜: ëˆ UI í…ìŠ¤íŠ¸
+    public GameObject endingUIPanel; // ì—”ë”© UI íŒ¨ë„
     public Button yesButton; 
     public Button noButton; 
-    public int endingGoldAmount = 50000; // ¿ìÁÖ¼± Å¾½ÂÀ» À§ÇÑ ÃÖ¼Ò ±İ¾×
-
+    public int endingGoldAmount = 50000; // ìš°ì£¼ì„  íƒ‘ìŠ¹ì„ ìœ„í•œ ìµœì†Œ ê¸ˆì•¡
+    public bool hiddenEnd = false;
     new void Awake()
     {
         runningAction += UpdateTime;
@@ -58,14 +58,14 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        UpdateMoneyText(); // °ÔÀÓ ½ÃÀÛ ½Ã µ· UI ¾÷µ¥ÀÌÆ®
+        UpdateMoneyText(); // ê²Œì„ ì‹œì‘ ì‹œ ëˆ UI ì—…ë°ì´íŠ¸
 
         if (endingUIPanel != null)
         {
             endingUIPanel.SetActive(false);
         }
 
-        // ¹öÆ° ÀÌº¥Æ® ¸®½º³Ê Ãß°¡
+        // ë²„íŠ¼ ì´ë²¤íŠ¸ ë¦¬ìŠ¤ë„ˆ ì¶”ê°€
         if (yesButton != null)
         {
             yesButton.onClick.AddListener(() => HandleEndingChoice(true));
@@ -92,7 +92,7 @@ public class GameManager : Singleton<GameManager>
                 {
                     runningAction();
                 }
-                CheckForEnding(); // ¿£µù Á¶°Ç Ã¼Å©
+                CheckForEnding(); // ì—”ë”© ì¡°ê±´ ì²´í¬
                 break;
             case GameState.Event:
                 if (eventAction != null)
@@ -117,15 +117,15 @@ public class GameManager : Singleton<GameManager>
         int badEndingPoint = 20;
         if (envPoint >= goodEndingPoint)
         {
-            // ÁÁÀº ¿£µù Ã³¸®
+            // ì¢‹ì€ ì—”ë”© ì²˜ë¦¬
         }
         else if (envPoint > nomalEndingPoint)
         {
-            // º¸Åë ¿£µù Ã³¸®
+            // ë³´í†µ ì—”ë”© ì²˜ë¦¬
         }
         else if (envPoint > badEndingPoint)
         {
-            // ³ª»Û ¿£µù Ã³¸®
+            // ë‚˜ìœ ì—”ë”© ì²˜ë¦¬
         }
     }
 
@@ -138,30 +138,30 @@ public class GameManager : Singleton<GameManager>
     public void AddMoney(int amount)
     {
         money += amount;
-        UpdateMoneyText(); // µ·À» Ãß°¡ÇÒ ¶§¸¶´Ù UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        UpdateMoneyText(); // ëˆì„ ì¶”ê°€í•  ë•Œë§ˆë‹¤ UI í…ìŠ¤íŠ¸ ì—…ë°ì´íŠ¸
     }
     public void AddEnvPoint(int amount)
     {
         envPoint += amount;
     }
-    private void UpdateMoneyText() // µ· UI ÅØ½ºÆ®¸¦ ¾÷µ¥ÀÌÆ®ÇÏ´Â ¸Ş¼­µå
+    private void UpdateMoneyText() // ëˆ UI í…ìŠ¤íŠ¸ë¥¼ ì—…ë°ì´íŠ¸í•˜ëŠ” ë©”ì„œë“œ
     {
         if (moneyText != null)
         {
-            moneyText.text = "ÇöÀç µ·: " + money.ToString() + "¿ø";
+            moneyText.text = "í˜„ì¬ ëˆ: " + money.ToString() + "ì›";
         }
     }
 
-    private void CheckForEnding() // ¿£µù Á¶°ÇÀ» È®ÀÎÇÏ´Â ¸Ş¼­µå
+    private void CheckForEnding() // ì—”ë”© ì¡°ê±´ì„ í™•ì¸í•˜ëŠ” ë©”ì„œë“œ
     {
         if (money >= endingGoldAmount && gameState == GameState.Running)
         {
-            gameState = GameState.Event; // °ÔÀÓ »óÅÂ¸¦ Event·Î º¯°æ
-            ShowEndingUI(); // ¿£µù UI Ç¥½Ã
+            gameState = GameState.Event; // ê²Œì„ ìƒíƒœë¥¼ Eventë¡œ ë³€ê²½
+            ShowEndingUI(); // ì—”ë”© UI í‘œì‹œ
         }
     }
 
-    private void ShowEndingUI() // ¿£µù UI¸¦ Ç¥½ÃÇÏ´Â ¸Ş¼­µå
+    private void ShowEndingUI() // ì—”ë”© UIë¥¼ í‘œì‹œí•˜ëŠ” ë©”ì„œë“œ
     {
         if (endingUIPanel != null)
         {
@@ -169,20 +169,20 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void HandleEndingChoice(bool choice) // ¿£µù ¼±ÅÃÀ» Ã³¸®ÇÏ´Â ¸Ş¼­µå
+    private void HandleEndingChoice(bool choice) // ì—”ë”© ì„ íƒì„ ì²˜ë¦¬í•˜ëŠ” ë©”ì„œë“œ
     {
-        if (choice) // '¿¹' ¼±ÅÃ
+        if (choice) // 'ì˜ˆ' ì„ íƒ
         {
-            AddMoney(-endingGoldAmount); // µ· Â÷°¨
-            // ÁÁÀº ¿£µùÀ¸·Î ÁøÇà
-            Debug.Log("¿ìÁÖ¼±¿¡ Å¾½ÂÇÏ¿© ÁÁÀº ¿£µùÀ¸·Î!");
+            AddMoney(-endingGoldAmount); // ëˆ ì°¨ê°
+            // ì¢‹ì€ ì—”ë”©ìœ¼ë¡œ ì§„í–‰
+            Debug.Log("ìš°ì£¼ì„ ì— íƒ‘ìŠ¹í•˜ì—¬ ì¢‹ì€ ì—”ë”©ìœ¼ë¡œ!");
         }
-        else // '¾Æ´Ï¿À' ¼±ÅÃ
+        else // 'ì•„ë‹ˆì˜¤' ì„ íƒ
         {
-            // ¹èµå¿£µù Ã³¸®
-            Debug.Log("¹èµå¿£µù: ¿ìÁÖ¼±À» Å¸Áö ¾Ê¾Ò½À´Ï´Ù.");
+            // ë°°ë“œì—”ë”© ì²˜ë¦¬
+            Debug.Log("ë°°ë“œì—”ë”©: ìš°ì£¼ì„ ì„ íƒ€ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
         }
-        endingUIPanel.SetActive(false); // ¿£µù UI ºñÈ°¼ºÈ­
-        gameState = GameState.End; // °ÔÀÓ »óÅÂ¸¦ End·Î º¯°æ
+        endingUIPanel.SetActive(false); // ì—”ë”© UI ë¹„í™œì„±í™”
+        gameState = GameState.End; // ê²Œì„ ìƒíƒœë¥¼ Endë¡œ ë³€ê²½
     }
 }

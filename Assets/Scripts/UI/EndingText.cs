@@ -9,10 +9,22 @@ public class EndingText : MonoBehaviour
     public TMP_Text textMeshPro; // TMP 텍스트 컴포넌트
     public float typingSpeed = 0.1f; // 글자 출력 속도
     public float fadeDuration = 1f; // 페이드 시간
+
+    public Sprite[] sprites;
+    public SpriteRenderer _renderer;
     
     void Start()
     {
-    
+        if(GameManager.Instance.envPoint >= 100)//good end
+        {
+            _renderer.sprite = sprites[1];
+        }else{
+            _renderer.sprite = sprites[0];
+        }
+        if(GameManager.Instance.hiddenEnd)//hidden end
+        {
+            _renderer.sprite = sprites[2];
+        }
         SetEndingText();
     }
     
