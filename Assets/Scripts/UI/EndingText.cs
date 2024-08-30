@@ -15,7 +15,7 @@ public class EndingText : MonoBehaviour
     
     void Start()
     {
-        if(GameManager.Instance.envPoint >= 100)//good end
+        if(GameManager.Instance.envPoint >= 14)//good end
         {
             _renderer.sprite = sprites[1];
         }else{
