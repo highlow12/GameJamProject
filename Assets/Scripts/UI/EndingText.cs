@@ -160,4 +160,8 @@ public class EndingText : MonoBehaviour
         SetAlpha(1); // 확실히 1로 설정
         yield return new WaitForSeconds(0.5f);
     }
+
+    IEnumerator asffdas(){
+        string f = "돈만 보고 달려온 당신은 지구 온난화를 가속시켰으며 모은 돈으로 지구를 탈출하였습니  다.\n당신의 환경 지수는 ‘";
+        yield return null;}
 }
