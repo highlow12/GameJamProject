@@ -60,6 +60,7 @@ public class GarbageManagerNew : MonoBehaviour
         }
         if (garbageCountTotal == 0 && spawnedGarbageCount == 0)
         {
+            MinigameTiemr.Instance.EndTimer();
             return;
         }
         if (Input.GetKeyDown(KeyCode.A))
