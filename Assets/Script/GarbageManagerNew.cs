@@ -19,6 +19,7 @@ public enum GarbageType
 
 public class GarbageManagerNew : MonoBehaviour
 {
+    AudioSource audio;
     public static GarbageManagerNew instance;
     public List<GameObject> garbagePrefabs;
     public Vector3 initialPosition;
@@ -33,6 +34,7 @@ public class GarbageManagerNew : MonoBehaviour
 
     void Awake()
     {
+        audio = GetComponent<AudioSource>();
         if (instance == null)
         {
             instance = this;
@@ -127,6 +129,7 @@ public class GarbageManagerNew : MonoBehaviour
 
     public void DespawnGarbage(GameObject garbage)
     {
+        audio.Play();
         isMoving = false;
         garbages.Remove(garbage);
         spawnedGarbageCount--;
