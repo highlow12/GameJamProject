@@ -44,6 +44,12 @@ public class GarbageManagerNew : MonoBehaviour
 
     void Update()
     {
+        if(MinigameTiemr.Instance.timeRemaining<=0){
+            foreach (GameObject garbage in garbages)
+        {
+            Destroy(garbage);
+        }
+        }
         float maxX = -99999;
 
         foreach (GameObject garbage in garbages)
