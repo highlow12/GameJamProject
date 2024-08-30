@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Newspaper : InteractableObject
 {
+    public static Newspaper Instance;
     GameObject focusedObject;
     BoxCollider2D boxCollider2D;
     [SerializeField]
@@ -13,10 +14,11 @@ public class Newspaper : InteractableObject
     public Newspaper()
     {
         objectName = "Newspaper";
-        isInteractable = true;
+        isInteractable = false;
     }
     public void Awake()
     {
+        Instance = this;
         focusedObject = transform.GetChild(0).gameObject;
         boxCollider2D = GetComponent<BoxCollider2D>();
         _audio = GetComponent<AudioSource>();
@@ -26,6 +28,10 @@ public class Newspaper : InteractableObject
         // _audio.Play();
         // pause the game time
         // Show the focused object
+        if (!isInteractable)
+        {
+            return;
+        }
         isInteractable = false;
         GameManager.Instance.gameState = GameState.Select;
         focusedObject.SetActive(true);
