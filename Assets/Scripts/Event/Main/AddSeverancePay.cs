@@ -5,7 +5,8 @@ using UnityEngine;
 public class AddSeverancePay : EventData
 {
     private bool isGiven = false;
-    AudioSource _audio;
+    [SerializeField]
+    private AudioSource _audio;
 
     public AddSeverancePay()
     {

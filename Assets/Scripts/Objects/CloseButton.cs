@@ -5,7 +5,8 @@ using UnityEngine.EventSystems;
 
 public class CloseButton : InteractableObject
 {
-    AudioSource _audio;
+    [SerializeField]
+    private AudioSource _audio;
 
     private void Awake()
     {
